@@ -17,5 +17,5 @@ def home(request):
 def sobre(request):
     return HttpResponse("Ewerton Santiago")
 
-def tarefa(request, ano, mes):
-    return HttpResponse("tarefa:" + str(ano) + "/" + str(mes))
+def tarefa(request, ano, mes, dia):
+    return HttpResponse("tarefa:" + str(ano) + "/" + str(mes) + "/" + str(dia))
